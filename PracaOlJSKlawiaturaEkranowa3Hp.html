@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dokument</title>
+</head>
+<body>
+	<script>
+		let tabelaA = Array()
+		for (let A=65; A<91; A++) {
+			tabelaA.push(String.fromCharCode(A));
+		}
+		console.log(tabelaA);
+		for (let l = 0; l < tabelaA.length; l++) {
+			let e = document.createElement('button');
+			e.addEventListener ('click', funkcjaA);
+			e.innerHTML = (tabelaA[l]);
+			document.body.appendChild(e);
+			function funkcjaA() {
+				alert (tabelaA[l]);
+			}
+		} 
+	</script>
+<p><b>OP3Hp</b></p>
+</body>
+</html>
